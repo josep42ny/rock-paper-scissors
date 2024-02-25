@@ -1,0 +1,36 @@
+:root {
+    --primary: #3CA674;
+    --secondary: #F2F2F2;
+    --bg-dark: #1e1e1e;
+    --bg-light: ;
+    --fn-dark-medium: ;
+    --fn-dark-lower: ;
+    --fn-dark-disabled: ;
+    --fn-light-medium: ;
+    --fn-light-lower: ;
+    --fn-light-disabled: ;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.content-width {
+    width: 60ch;
+}
+
+.bg-dark {
+    background: var(--bg-dark);
+}
+
+.fn-light {
+    color: var(--fn-light-medium);
+}
