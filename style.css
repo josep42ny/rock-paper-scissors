@@ -53,6 +53,10 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    background-color: white;
+}
+
 a {
     text-decoration: none;
 }
@@ -93,4 +97,8 @@ a {
 .git-icon {
     fill: var(--fn-light-medium);
     margin-right: 6px;
+}
+
+.hide {
+    display: none;
 }
