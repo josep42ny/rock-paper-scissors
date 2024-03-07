@@ -5,41 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
 </head>
 <body class="bg-dark">
     <header class="flex-center">
-        <div class="score-board content-width">
-            <a href="#"><p class="logo">Rock<br>Paper<br>Scissors</p></a>
-            <div>
-                <h4>Score</h4>
-                <p id="score">0</p>
-            </div>
-            <div>
-                <h4>Round</h4>
-                <p id="round">0/0</p>
-            </div>
-        </div>
     </header>
     <main>
         <section class="flex-center">
-            <div class="content-width">
-                <div class="player-area">
+            <div class="content-width bg-light">
+                <div class="score-board">
+                    <a href="#"><p class="logo">Rock<br>Paper<br>Scissors</p></a>
                     <div>
-                        <button>Rock</button>
+                        <h4>Score</h4>
+                        <p id="score">0</p>
                     </div>
                     <div>
-                        <button>Paper</button>
-                    </div>
-                    <div>
-                        <button>Scissors</button>
+                        <h4>Round</h4>
+                        <p id="round">0</p>
                     </div>
                 </div>
                 <div class="computer-area">
                     <div>
-                        <p id="rock" class="hide">&#129704;</p>
-                        <p id="paper" class="hide">&#129531;</p>
-                        <p id="scissors" class="hide">&#9988;</p>
+                        <p>Player</p>
+                        <p id="prock" class="option-card">&#129704;</p>
+                        <p id="ppaper" class="hide option-card">&#129531;</p>
+                        <p id="pscissors" class="hide option-card">&#9988;</p>
+                    </div>
+                    <div>
+                        <p>Computer</p>
+                        <p id="crock" class="option-card">&#129704;</p>
+                        <p id="cpaper" class="hide option-card">&#129531;</p>
+                        <p id="cscissors" class="hide option-card">&#9988;</p>
+                    </div>
+                </div>
+                <div class="player-area">
+                    <div>
+                        <button id="playBtn" value="rock">&#129704; Rock</button>
+                    </div>
+                    <div>
+                        <button id="playBtn" value="paper">&#129531; Paper</button>
+                    </div>
+                    <div>
+                        <button id="playBtn" value="scissors">&#9988; Scissors</button>
                     </div>
                 </div>
             </div>
